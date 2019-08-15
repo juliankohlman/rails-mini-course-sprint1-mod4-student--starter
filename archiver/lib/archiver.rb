@@ -10,7 +10,7 @@ module Archiver
 	end
 
 	def archived?
-		archived_at.nil? ? false : true
+		!archived_at.nil?
 	end
 
 	def restore
